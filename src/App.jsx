@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-        <div>Привет</div>
+        <div>Hey)</div>
       <ParametrHead name='Параметр' value='Величина' unit='Ед. изм.' />
       <ParametrBlock name='Параметры нефти' />
       <ParametrItem name='Уровень нефти (факт)' value='8.34' unit='м' />
