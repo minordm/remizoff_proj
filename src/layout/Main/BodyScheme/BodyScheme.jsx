@@ -1,15 +1,21 @@
 import "./BodyScheme.css";
 import { ReactSVG } from "react-svg";
-import { useState } from 'react';
+import {useRef, useState} from 'react';
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 
 export default function BodyScheme() {
   const [count, setCount] = useState(0);
+  const tranformRef = useRef(null);
 
   return (
     <div className="body-scheme">
       <button onClick={() => setCount(count + 1)}>+</button>
-      <TransformWrapper>
+      <div className='zoom-button'>
+        <button className='zoomIn-button' onClick={() => tranformRef.current?.zoomIn()} >+</button>
+        <button className='zoomOut-button' onClick={() => tranformRef.current?.zoomOut()}>-</button>
+        <button className='zoomReset-button' onClick={() => tranformRef.current?.resetTransform()}>Reset</button>
+      </div>
+      <TransformWrapper ref={tranformRef}>
         <TransformComponent>
           <ReactSVG
             src="./scheme2-01-1.svg"
