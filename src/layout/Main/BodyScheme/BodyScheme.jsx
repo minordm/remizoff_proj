@@ -1,3 +1,5 @@
+import "./BodyScheme.css";
+
 export default function BodyScheme() {
 
   return (

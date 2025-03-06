@@ -1,3 +1,4 @@
+import "./AlertList.css";
 import AlertItem from "../AlertItem/AlertItem";
 
 export default function AlertList() {

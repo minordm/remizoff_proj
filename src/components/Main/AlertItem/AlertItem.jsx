@@ -1,4 +1,7 @@
+import "./AlertItem.css";
+
 export default function AlertItem({name, datatime, message}) {
+
   return (
     <div className="alert-block">
       <div className="alert-head">

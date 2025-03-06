@@ -1,3 +1,5 @@
+import "./Diagrama.css";
+
 export default function Diagrama() {
   
   return (
