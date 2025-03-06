@@ -1,10 +1,12 @@
+import './ParametrItem.css';
+
 export default function ParametrItem({ name, value, unit }) {
 
     return (
-        <div>
-            <div>{ name }</div>
-            <div>{ value }</div>
-            <div>{ unit }</div>
+        <div className="parametr-item">
+            <div className="parametr-item__name">{ name }</div>
+            <div className="parametr-item__value">{ value }</div>
+            <div className="parametr-item__unit">{ unit }</div>
         </div>
     );
 };
