@@ -1,0 +1,6 @@
+.body-scheme {
+    background: rgb(12, 32, 57);
+    width: 100vh;
+    border: 1px solid rgb(86, 160, 207);
+    border-top: 3px solid rgb(86, 160, 207);
+}
