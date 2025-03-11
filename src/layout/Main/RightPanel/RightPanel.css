@@ -1,7 +1,8 @@
 .right-panel {
-    width: 475px;
-    height: 1060px;
-    /* height: 100vh; */
+    /* width: 300px; */
+    width: 365px;
+    /* height: 880px; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
