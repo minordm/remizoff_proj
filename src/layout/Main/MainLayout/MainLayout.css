@@ -1,0 +1,25 @@
+.main-layout {
+    display: flex;
+    height: 100vh; /* Занимает всю высоту окна браузера */
+    width: 100vw; /* Занимает всю ширину окна браузера */
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине и высоте */
+  }
+  
+  .body-scheme {
+    flex: 1; /* Занимает всё доступное пространство */
+    background: rgb(12, 32, 57);
+    border: 1px solid rgb(86, 160, 207);
+    border-top: 3px solid rgb(86, 160, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-panel {
+    width: 475px;
+    height: 1060px;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }  

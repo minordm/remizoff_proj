@@ -11,17 +11,18 @@ import Diagrama from "./components/Main/Diagrama/Diagrama";
 import AlertList from "./components/Main/AlertList/AlertList";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Error from './components/Error/Error.jsx';
+import MainLayout from './layout/Main/MainLayout/MainLayout';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <div className="main-page">
-        <BodyScheme />
-        <RightPanel>
+        <MainLayout>
           <Diagrama />
           <AlertList />
-        </RightPanel>
+        </MainLayout>
       </div>
     ),
   },
