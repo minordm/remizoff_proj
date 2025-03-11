@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       {
         path: '/graphic',
         element: (
-          <div className="main-page">
+          <div className="graphic-page">
             <LeftPanel>
               <ParametrItem
                 name="Параметр"

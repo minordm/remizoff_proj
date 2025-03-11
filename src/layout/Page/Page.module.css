@@ -5,7 +5,6 @@
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(86, 160, 207);
 }
 
 .link {
@@ -16,4 +15,3 @@
 .link:hover, .active {
     color: rgb(86, 160, 207);
 }
-

@@ -4,8 +4,6 @@ import cn from 'classnames';
 
 export default function Layout() {
 
-
-
     return <div className={styles['layout']}>
       <div className={styles['navigation']}>
         <NavLink to='/' className={({ isActive }) => cn(styles['link'], {

@@ -91,19 +91,19 @@ const options = {
 
 export const LineGraph = () => {
   return (
-    <Line
-      data={{
-        labels: parsedData.map((data) => data.label), // преобразуем в формат времени
-        datasets: [
-          {
-            label: "Наличие воды",
-            data: parsedData.map((data) => data.value),
-            borderColor: "rgb(86, 160, 207)",
-          },
-        ],
-      }}
-      options={options}
-    />
+      <Line
+        data={{
+          labels: parsedData.map((data) => data.label), // преобразуем в формат времени
+          datasets: [
+            {
+              label: "Наличие воды",
+              data: parsedData.map((data) => data.value),
+              borderColor: "rgb(86, 160, 207)",
+            },
+          ],
+        }}
+        options={options}
+      />
   );
   // return <Line data={lineChartData} options={options} />; // для данных которые внутри Line.jsx
 };
